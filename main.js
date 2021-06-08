@@ -22,10 +22,13 @@ const students = [
   'Arnold',
   'Andy'
 ];
+
 console.log("Challenge 1\n");
+
 for (let i = 0; i < students.length; i++) {
   console.log(students[i]);
 }
+
 console.log();
 
 // Challenge 2
@@ -33,9 +36,11 @@ console.log();
 const grades = [100, 80, 110, 75, 83, 64];
 
 console.log("Challenge 2\n");
+
 for (let i = 0; i < grades.length; i++) {
   console.log(grades.reverse()[i]);
 }
+
 console.log();
 
 // Challenge 3
@@ -43,12 +48,14 @@ console.log();
 const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
 
 console.log("Challenge 3\n");
+
 for (let i = 0; i < positiveNumbers.length; i++) {
 
   if (positiveNumbers[i] % 2 === 0)
   console.log(positiveNumbers[i]);
   
 }
+
 console.log();
 
 // Challenge 4
@@ -56,12 +63,14 @@ console.log();
 const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
 
 console.log("Challenge 4\n");
+
 for (let i = 0; i < mixedSignNumbers.length; i++) {
 
   if (mixedSignNumbers[i] % 2 === 0)
   console.log(mixedSignNumbers[i]);
   
 }
+
 console.log();
 
 // Challenge 5
@@ -140,15 +149,29 @@ console.log();
 
 console.log("Challenge 10\n");
 
+let studentsCopy = [];
+
 for (let i = 3; i < + students.length ; i++) {
   console.log(students[i]);
 }
+
+for (const student of studentsCopy) {
+  console.log(student);
+}
+
 console.log();
 
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
 
 console.log("Challenge 11\n");
+
+const studentsCopy2 = students.slice(3, 11);
+
+for (const student of studentsCopy) {
+  console.log(student);
+
+}
 
 // Challenge 12
 // Pull the items at indices 4-6 (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
